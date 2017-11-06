@@ -3,7 +3,7 @@ This is JiGuang Push notification SDK in Xamarin iOS
 
 Compile file as https://github.com/JimmyPun610/XamariniOSJiGuangPushNotification/blob/master/JPushiOSBindingLibrary/JPushiOSLibrary.dll
 
-Based on JiGuang SDK v3.0.6 https://www.jiguang.cn/push
+Based on JiGuang SDK v3.0.7 https://www.jiguang.cn/push
 
 Guide :
 
