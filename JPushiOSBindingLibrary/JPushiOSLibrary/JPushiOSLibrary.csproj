@@ -44,6 +44,7 @@
     <NativeReference Include="libJPushLibrary.a">
       <Kind>Static</Kind>
       <SmartLink>False</SmartLink>
+      <LinkerFlags>-lresolv</LinkerFlags>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
