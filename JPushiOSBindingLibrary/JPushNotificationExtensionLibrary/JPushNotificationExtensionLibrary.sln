@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JPushNotificationExtensionLibrary", "JPushNotificationExtensionLibrary\JPushNotificationExtensionLibrary.csproj", "{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Release|iPhone.Build.0 = Release|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{AE8CC4B1-4A1E-4C32-BE22-5274E0956374}.Debug|iPhone.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
