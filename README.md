@@ -1,7 +1,15 @@
 # XamariniOSJiGuangPushNotification
 This is JiGuang Push notification SDK in Xamarin iOS
 
-Compile file as https://github.com/JimmyPun610/XamariniOSJiGuangPushNotification/blob/master/JPushiOSBindingLibrary/JPushiOSLibrary.dll
+Compile file as 
+
+Core Library : 
+
+https://github.com/JimmyPun610/XamariniOSJiGuangPushNotification/blob/master/JPushiOSBindingLibrary/JPushiOSLibrary/JPushiOSLibrary.dll
+
+Extension Service Library :
+
+https://github.com/JimmyPun610/XamariniOSJiGuangPushNotification/blob/master/JPushiOSBindingLibrary/JPushNotificationExtensionLibrary/JPushNotificationExtensionLibrary.dll
 
 Based on JiGuang SDK v3.0.7 https://www.jiguang.cn/push
 
@@ -263,3 +271,30 @@ namespace MobileApp.iOS.Notification
             UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             JPushiOSLibrary.JPUSHService.SetBadge(0);
         }
+
+5. Notification Service Extension settings (Not tested yet)
+```C#
+
+        public override void DidReceiveNotificationRequest(UNNotificationRequest request, Action<UNNotificationContent> contentHandler)
+        {
+            ContentHandler = contentHandler;
+            BestAttemptContent = (UNMutableNotificationContent)request.Content.MutableCopy();
+
+            // Modify the notification content here...
+            BestAttemptContent.Title = string.Format("{0}[modified]", BestAttemptContent.Title);
+
+            //Send back information to JPush server
+            apnsDeliverWith(request);
+          
+        }
+
+
+        private void apnsDeliverWith(UNNotificationRequest request)
+        {
+            JPushNotificationExtensionService.JpushSetAppkey([JPushAppKey]);
+            JPushNotificationExtensionService.JpushReceiveNotificationRequest(request, () =>
+            {
+                ContentHandler(BestAttemptContent);
+            );
+        }
+```
