@@ -271,7 +271,7 @@ namespace MobileApp.iOS.Notification
             UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             JPushiOSLibrary.JPUSHService.SetBadge(0);
         }
-
+```
 5. Notification Service Extension settings (Not tested yet)
    ```C#
 
