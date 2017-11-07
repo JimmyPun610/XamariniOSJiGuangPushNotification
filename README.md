@@ -273,7 +273,7 @@ namespace MobileApp.iOS.Notification
         }
 
 5. Notification Service Extension settings (Not tested yet)
-```C#
+   ```C#
 
         public override void DidReceiveNotificationRequest(UNNotificationRequest request, Action<UNNotificationContent> contentHandler)
         {
@@ -297,4 +297,4 @@ namespace MobileApp.iOS.Notification
                 ContentHandler(BestAttemptContent);
             );
         }
-```
+    ```
