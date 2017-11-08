@@ -9,6 +9,7 @@ using UserNotifications;
 namespace JPushNotificationExtensionLibrary
 {
     // @interface JPushNotificationExtensionService : NSObject
+    [Protocol]
     [BaseType(typeof(NSObject))]
     interface JPushNotificationExtensionService
     {
@@ -24,6 +25,7 @@ namespace JPushNotificationExtensionLibrary
     }
 
     // @interface JPushNotificationExtensionServiceLibrary : NSObject
+    [Protocol]
     [BaseType(typeof(NSObject))]
     interface JPushNotificationExtensionServiceLibrary
     {
